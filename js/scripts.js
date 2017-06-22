@@ -1,8 +1,8 @@
 $('span:even').css('color', 'red');
 
 $('p').each(function(index, element) {
-    $('<button/>').addClass('btn').attr({ 'data-tmp': index }).text('Click me');
-    $(element).append('<button/>');
+    var button = $('<button/>').addClass('btn').attr({ 'data-tmp': index }).text('Click me');
+    $(element).append(button);
 });
 
 $('button').click(function(){
